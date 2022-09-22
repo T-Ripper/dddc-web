@@ -1,0 +1,87 @@
+.bible-cover {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  padding: 20px 10px;
+  transition: 0.5s ease-out;
+}
+
+.verse1 {
+  border: 1px solid black;
+  background-color: #eeaeca;
+  height: 230px;
+  transition: 0.5s ease-out;
+}
+.verse1:hover {
+  background-image: linear-gradient(#eeaeca, #94bbe9);
+}
+
+.verse2 {
+  border: 1px solid black;
+  background-color: #94bbe9;
+  height: 230px;
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+}
+.verse2:hover {
+  background-image: linear-gradient(#94bbe9, #fc466b);
+}
+
+.verse3 {
+  border: 1px solid black;
+  background-color: #22c1c3;
+  height: 230px;
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+}
+.verse3:hover {
+  background-image: linear-gradient(#22c1c3, #fdbb2d);
+}
+.verse4 {
+  border: 1px solid black;
+  background-color: #3f5efb;
+  height: 230px;
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+}
+.verse4:hover {
+  background: linear-gradient(#3f5efb, #020024);
+}
+.verse5 {
+  border: 1px solid black;
+  background-color: #fc466b;
+  height: 230px;
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+}
+.verse5:hover {
+  background-image: linear-gradient(#eeaeca, #fcb045);
+}
+
+h3,
+h4 {
+  text-align: center;
+}
+h3 {
+  padding-top: 24px;
+}
+h4 {
+  padding-top: 20px;
+}
+
+.bible-cover:hover {
+  /* background-image: linear-gradient(red, yellow); */
+  background-position: -100%;
+}

@@ -1,0 +1,64 @@
+.paragraph h1 {
+  text-align: center;
+  margin: 0;
+  transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -ms-transition: 0.1s ease-out;
+  -o-transition: 0.1s ease-out;
+}
+.paragraph h1:hover {
+  text-decoration: underline #eeaeca;
+}
+.paragraph {
+  margin-top: 100px;
+}
+
+.border-line {
+  margin-top: 100px;
+  background-color: antiquewhite;
+  height: 600px;
+}
+
+.cover {
+  background: url("../../assets/mum\ design.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+form {
+  padding-top: 30px;
+  margin-top: 80px;
+
+  /* margin-left: 830px; */
+}
+
+input {
+  width: 20em;
+  height: 3em;
+}
+textarea {
+  width: 20em;
+  height: 8em;
+}
+button {
+  margin-top: 8em;
+  text-align: center;
+  margin-left: 6em;
+}
+
+@media only screen and (max-width: 700px) {
+  .paragraph {
+  }
+
+  form {
+    padding-left: 40px;
+    margin-left: 80px;
+  }
+  button {
+    margin-left: 20px;
+  }
+}

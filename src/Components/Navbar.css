@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right, rgb(25, 94, 36), rgb(8, 8, 8));
+  /* background-color: aqua; */
+  margin: 0;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.set {
+  display: none;
+}
+.navlist {
+  list-style: none;
+  display: flex;
+  color: white;
+  font-size: small;
+}
+li {
+  margin-right: 2rem;
+  padding: 0.5rem;
+  transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+}
+li:hover {
+  color: rgb(25, 94, 36);
+}
+.header {
+  margin-right: auto;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+img {
+  width: 80px;
+  height: 70px;
+}
+.icons {
+  display: none;
+}
+a {
+  color: azure;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    background-image: linear-gradient(to right, rgb(25, 94, 36), rgb(8, 8, 8));
+    /* background-color: blueviolet; */
+
+    color: white;
+  }
+  .navlist {
+    display: none;
+  }
+  li {
+    text-align: center;
+    border-top: 2px solid snow;
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+  .icons {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    padding-top: 15px;
+  }
+
+  .Dropdown {
+    color: rgb(23, 173, 165);
+    margin-right: -160px;
+    margin-top: 130px;
+  }
+  set {
+  }
+  .navlist-active {
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+  }
+}
