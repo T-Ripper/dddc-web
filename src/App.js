@@ -8,7 +8,8 @@ import HomePage from "./Pages/Homepage";
 import Contact from "./Pages/Contact";
 import Give from "./Pages/Give";
 import Footer from "./Components/Footer/Footer";
-import Media from "./Pages/Media";
+// import Media from "./Pages/Media";
+import Mission from "./Pages/Mission";
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <Route path="/history" element={<History />} />
         <Route path="/uniqueness" element={<OurUniquenes />} />
         <Route path="/belief" element={<Belief />} />
-        <Route path="/media" element={<Media />} />
+        <Route path="/mission" element={<Mission />} />
+        {/* <Route path="/media" element={<Media />} /> */}
         <Route path="/give" element={<Give />} />
         <Route path="/contactUs" element={<Contact />} />
       </Routes>

@@ -16,9 +16,7 @@ const Navbar = () => {
   };
   const secondNavbar = () => {
     setDropdown(!dropdown);
-    if (setDropdown) {
-      handleClick();
-    }
+
     console.log("click");
   };
   return (
@@ -33,25 +31,26 @@ const Navbar = () => {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <li onClick={secondNavbar}>About Us</li>
+        <li onMouseOver={secondNavbar}>About Us</li>
         <ul className={dropdown ? "Dropdown" : "set"}>
           <Link to="/history">
             <li>Our History</li>
           </Link>
-
-          <li> Mission and Vision</li>
+          <Link to="/mission">
+            <li className="increaseIndex"> Mission and Vision</li>
+          </Link>
 
           <Link to="/belief">
-            <li>Our Beliefs</li>
+            <li className="increaseIndex">Our Beliefs</li>
           </Link>
 
           <Link to="/uniqueness">
-            <li>Our Uniqness</li>
+            <li id="increaseIndex">Our Uniqness</li>
           </Link>
         </ul>
-        <Link to="/media">
+        {/* <Link to="/media">
           <li>Media Center</li>
-        </Link>
+        </Link> */}
         <Link to="give">
           <li>Give Online</li>
         </Link>

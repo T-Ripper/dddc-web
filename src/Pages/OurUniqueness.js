@@ -1,9 +1,9 @@
 import React from "react";
 import "../Pages/Styles/History.css";
-import { pics } from "../Components/images";
+import { media } from "../Components/images";
 
 const History = (props) => {
-  const fine = pics.map((image) => {
+  const fine = media.map((image) => {
     return <img key={image.id} src={image.images} alt={image.name} />;
   });
   //   const header = <img src={final} alt="header" />;

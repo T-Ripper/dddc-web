@@ -11,7 +11,7 @@ import media5 from "../assets/media/media5.JPG";
 import media6 from "../assets/media/media6.JPG";
 import media1 from "../assets/media/media1.JPG";
 import napeep from "../assets/media/napeep.JPG";
-import cho from "../assets/media/cho.JPG";
+// import cho from "../assets/media/cho.JPG";
 import evang from "../assets/media/evang.JPG";
 
 export const pics = [
@@ -75,11 +75,7 @@ export const media = [
     name: "napeep",
     images: napeep,
   },
-  {
-    id: 8,
-    name: "media8",
-    images: cho,
-  },
+
   {
     id: 9,
     name: "media10",

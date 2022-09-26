@@ -39,6 +39,7 @@ video {
   flex-direction: column;
   gap: 0.5rem;
   color: white;
+  z-index: 1000;
 }
 li {
   list-style: none;
@@ -46,14 +47,6 @@ li {
   border-radius: 0.2rem;
   transition: background-color 200ms ease-in-out;
   z-index: 3;
-  -webkit-border-radius: 0.2rem;
-  -moz-border-radius: 0.2rem;
-  -ms-border-radius: 0.2rem;
-  -o-border-radius: 0.2rem;
-  -webkit-transition: background-color 200ms ease-in-out;
-  -moz-transition: background-color 200ms ease-in-out;
-  -ms-transition: background-color 200ms ease-in-out;
-  -o-transition: background-color 200ms ease-in-out;
 }
 .set {
   display: none;

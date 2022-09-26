@@ -17,6 +17,9 @@
   color: white;
   font-size: small;
 }
+#increaseIndex {
+  z-index: 111000;
+}
 li {
   margin-right: 2rem;
   padding: 0.5rem;
@@ -25,6 +28,8 @@ li {
   -moz-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
+
+  font-weight: bolder;
 }
 li:hover {
   color: rgb(25, 94, 36);
