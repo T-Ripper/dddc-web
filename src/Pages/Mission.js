@@ -4,7 +4,7 @@ import "./Styles/Belief.css";
 const Mission = () => {
   return (
     <div className="mission">
-      <h1>Steps to Salvation</h1>
+      <h1>Mission & Vision </h1>
       <div className="unique">
         <ol type="A">
           <li>

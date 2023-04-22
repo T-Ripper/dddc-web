@@ -10,6 +10,7 @@ import Give from "./Pages/Give";
 import Footer from "./Components/Footer/Footer";
 // import Media from "./Pages/Media";
 import Mission from "./Pages/Mission";
+//import Pass from "./Components/Pass";
 
 const App = () => {
   return (

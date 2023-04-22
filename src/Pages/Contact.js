@@ -1,7 +1,51 @@
-import React from "react";
-import Country from "../Components/Contact/Country";
+import { useState, useMemo } from "react";
+//import Country from "../Components/Contact/Country";
+import { db } from "../FirebaseConfig";
+import { set, ref, onValue } from "firebase/database";
+import Select from "react-select";
+import countryList from "react-select-country-list";
 import "../Components/Contact/Map.css";
+
 const Contact = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [country, setCountry] = useState("");
+
+  const options = useMemo(() => countryList().getData(), []);
+
+  const changeHandler = (country) => {
+    setCountry(country);
+  };
+
+  const sendMessage = () => {
+    // onValue(
+    //   db,
+    //   (snapshot) => {
+    //     snapshot.forEach((childSnapshot) => {
+    //       const childKey = childSnapshot.key;
+    //       const childData = childSnapshot.val();
+    //     });
+    //   },
+    //   {
+    //     onlyOnce: true,
+    //   }
+    // );
+    set(ref(db, `message`), {
+      firstName,
+      lastName,
+      country,
+      subject,
+      message,
+    });
+    setFirstName("");
+    setLastName("");
+    setCountry("");
+    setSubject("");
+    setMessage("");
+  };
+
   return (
     <div className="contain  ">
       <div className="ui inverted segment address ">
@@ -18,28 +62,42 @@ const Contact = () => {
             <div className="field">
               <input
                 type="text"
-                // name="shipping[first-name]"
+                value={firstName}
                 placeholder="First Name"
+                onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
             <div className="field">
               <input
                 type="text"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
                 // name="shipping[last-name]"
                 placeholder="Last Name"
               />
             </div>
           </div>
-          <Country />
+          <Select options={options} value={country} onChange={changeHandler} />
+          {/* <Country /> */}
+
           <br />
           <label> Subjext </label>
-          <input type="text" />
+          <input
+            type="text"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+          />
           <br />
           <label> Your Message</label>
-          <textarea></textarea>
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
         </div>
       </form>
-      <button className="ui green button">Send</button>
+      <button onClick={sendMessage} className="ui green button">
+        Send
+      </button>
       <div className="container mt5">
         <h2> Location Map</h2>
         <iframe
