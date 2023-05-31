@@ -10,7 +10,6 @@
     "firebase-tools": "^11.25.3",
     "node": "^19.8.1",
     "react": "^18.1.0",
-    "react-country-region-selector": "^3.4.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
@@ -24,7 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "buildDeploy": "yarn build && firebase deploy --only hosting"
+    "f": "yarn build && firebase deploy --only hosting"
   },
   "eslintConfig": {
     "extends": [

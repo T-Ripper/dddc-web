@@ -30,7 +30,7 @@ const Mission = () => {
           <li>
             {" "}
             E.) Lastly but not the least to be a place where God will grant all
-            hearts desires trough prayers and prophetic work{" "}
+            hearts desires through prayers and prophetic work{" "}
           </li>
         </ol>
       </div>

@@ -11,12 +11,12 @@ const Contact = () => {
   const [lastName, setLastName] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [country, setCountry] = useState("");
+  const [value, setValue] = useState("");
 
   const options = useMemo(() => countryList().getData(), []);
 
-  const changeHandler = (country) => {
-    setCountry(country);
+  const changeHandler = (value) => {
+    setValue(value);
   };
 
   const sendMessage = () => {
@@ -35,13 +35,13 @@ const Contact = () => {
     set(ref(db, `message`), {
       firstName,
       lastName,
-      country,
+      value,
       subject,
       message,
     });
     setFirstName("");
     setLastName("");
-    setCountry("");
+    setValue("");
     setSubject("");
     setMessage("");
   };
@@ -77,8 +77,8 @@ const Contact = () => {
               />
             </div>
           </div>
-          <Select options={options} value={country} onChange={changeHandler} />
-          {/* <Country /> */}
+          <Select options={options} value={value} onChange={changeHandler} />
+          {/* {/* <Country /> */}
 
           <br />
           <label> Subjext </label>
@@ -103,7 +103,7 @@ const Contact = () => {
         <iframe
           title="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4834308229406!2d3.2391788!3d6.5866713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9b15281d6467%3A0xb37bb53e1dfae0a1!2sDivine%20Dominion%20Deliverance%20Church!5e0!3m2!1sen!2sng!4v1656426715119!5m2!1sen!2sng"
-          width="600"
+          width="400"
           height="450"
           style={{ border: "1" }}
           allowFullScreen=""

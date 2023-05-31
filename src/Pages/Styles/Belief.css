@@ -1,16 +1,17 @@
 .unique {
-  background-image: url(../../assets/dddc.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   opacity: 1;
 }
-
+.Bible {
+  text-align: center;
+}
 .mission h1 {
   margin: 0;
   text-align: center;
   font-size: 100px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-color: aquamarine;
   -moz-text-decoration-color: aquamarine;
 }
