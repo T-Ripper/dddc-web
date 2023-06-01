@@ -4,6 +4,7 @@
   background-image: linear-gradient(to right, rgb(25, 94, 36), rgb(8, 8, 8));
   /* background-color: aqua; */
   margin: 0;
+
   justify-content: flex-end;
   align-items: center;
   cursor: pointer;
@@ -55,9 +56,16 @@ a {
   .navbar {
     background-image: linear-gradient(to right, rgb(25, 94, 36), rgb(8, 8, 8));
     /* background-color: blueviolet; */
-
+    width: 120%;
     color: white;
   }
+
+  .header {
+    margin-right: auto;
+    margin-right: 32rem;
+    margin-top: 0.5rem;
+  }
+
   .navlist {
     display: none;
   }
@@ -68,11 +76,15 @@ a {
     padding-top: 10px;
   }
   .icons {
-    display: block;
+    display: flex;
     position: absolute;
-    top: 15px;
-    right: 0px;
-    padding-top: 15px;
+
+    align-content: flex-end;
+    justify-content: flex-end;
+
+    top: 48px;
+    right: -20px;
+    /* padding-top: 15px; */
   }
 
   .Dropdown {

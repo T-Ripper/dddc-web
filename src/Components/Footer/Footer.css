@@ -34,12 +34,13 @@ img {
 }
 @media only screen and (min-width: 390px) {
   .Containerss {
-    width: 110%;
+    width: 120%;
     height: 5%;
     background: rgb(67, 100, 89);
   }
   img {
     margin-left: 14em;
+    margin-top: 1px;
   }
 
   .icon {
